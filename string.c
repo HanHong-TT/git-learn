@@ -30,3 +30,8 @@ int main(void)
 
    return 0;
 }
+
+char unused_char_function(char c)
+{
+   return c;
+}
