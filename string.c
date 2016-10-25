@@ -10,6 +10,11 @@ size_t my_strlen(char *s)
    return (p - s);
 }
 
+int unused_str_function(char *s) 
+{
+   return *s;
+}
+
 int main(void)
 {
    int i;
