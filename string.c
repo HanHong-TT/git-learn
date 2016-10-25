@@ -20,6 +20,8 @@ int unused_function(int i)
    return i;
 }
 
+void test_stash(int i) {}
+
 int main(void)
 {
    int i;
