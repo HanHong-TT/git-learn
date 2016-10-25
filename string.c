@@ -15,6 +15,11 @@ int unused_str_function(char *s)
    return *s;
 }
 
+int unused_function(int i)
+{
+   return i;
+}
+
 int main(void)
 {
    int i;
