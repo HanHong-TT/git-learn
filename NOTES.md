@@ -1,12 +1,15 @@
+[Link to git documentation](https://git-scm.com/doc)
+[Link to git Tutorialspoint](https://www.tutorialspoint.com/git/index.htm)
+
 # Basic commands
 
-git clone
+git clone [url] // pulls down all the data in the repo, init .git and checkout the latest version in working directory
 
 git checkout 
 
 git pull // fetch and integrate
 
-git add .
+git add [file_url/dir_url] // E.g., adding all files of current directory, git add .
 
 git commit [-a] [-m '[message]']
 
@@ -14,7 +17,9 @@ git push [-u] [repo] [branch] origin master
 
 git status
 
-git diff
+git diff // shows difference of **modified but not yet staged** changes
+
+git diff --[staged/cached] // shows difference of staged but not yet committed** changes
 
 git show
 
@@ -32,9 +37,11 @@ Each branch has a HEAD pointer, which points to the latest commit. If we use Git
 
 git checkout -- . // revert changes in current working directory
 
-git checkout -- * // revert all changes made to unstaged files in git status
+git checkout -- * // revert all changes made to **unstaged** files in git status
 
 git checkout -- [file_path] // revert changes to a certain path
+
+NOTE: _git pull_ erase all **uncommitted** changes, it fetch all the changes in the remote repo and merge (or rebase with the --rebase parameter) into the current committed repo. _git checkout_ erase all **unstaged** changes, it revert the file into the the status where HEAD points to, the staged but uncommitted changes will remain in the staging area.
 
 # Stash commands
 
@@ -68,7 +75,7 @@ git branch [-m] [old_branch_name] [new_branch_name] // rename branch
 
 git merge [origin/to_merge_branch] // merging branches. E.g., go to master branch and perform the merge command
 
-## Rebase vs Merge
+### Rebase vs Merge
 [Link to Tutorialspoint](https://www.tutorialspoint.com/git/git_managing_branches.htm)
 The Git rebase command is a branch merge command, but the difference is that it modifies the order of commits.
 
