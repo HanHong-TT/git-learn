@@ -4,6 +4,8 @@ git clone
 
 git checkout 
 
+git pull // fetch and integrate
+
 git add .
 
 git commit [-a] [-m '[message]']
@@ -25,6 +27,14 @@ git rm [file_name]
 git checkout [HEAD] [-- file_name]
 
 Each branch has a HEAD pointer, which points to the latest commit. If we use Git reset command with --soft option followed by commit ID, then it will reset the HEAD pointer only without destroying anything. **.git/refs/heads/master** file stores the commit ID (SHA-1) of the HEAD pointer.
+
+# Erase changes commands
+
+git checkout -- . // revert changes in current working directory
+
+git checkout -- * // revert all changes made to unstaged files in git status
+
+git checkout -- [file_path] // revert changes to a certain path
 
 # Stash commands
 
