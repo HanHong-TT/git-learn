@@ -20,6 +20,11 @@ int unused_function(int i)
    return i;
 }
 
+char unused_char_function(char c)
+{
+   return c;
+}
+
 void test_stash(int i) {}
 
 int main(void)
@@ -36,9 +41,4 @@ int main(void)
    printf("string lenght of %s = %lu\n", s[i], my_strlen(s[i]));
 
    return 0;
-}
-
-char unused_char_function(char c)
-{
-   return c;
 }
