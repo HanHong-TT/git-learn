@@ -109,3 +109,13 @@ Reset: update the **staged snapshot** of a certain file to a certain commit
 Checkout: update the **working directory** of a certain file to a certain commit
 
 Revert: Does not have file level operations
+
+#Branch
+
+git checkout -b [new_branch_name] // equals to run a git branch [new_branch_name] and git checkout [new_branch_name]
+
+git branch // show branches
+
+git branch -d [branch_name] // delete branch
+
+git merge [to_merge_branch] // merget to_merge_branch to the current HEAD branch
