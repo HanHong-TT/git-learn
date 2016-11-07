@@ -114,6 +114,8 @@ Revert: Does not have file level operations
 
 git checkout -b [new_branch_name] // equals to run a git branch [new_branch_name] and git checkout [new_branch_name]
 
+git checkout -b [new_branch_name] [existing_branch_name] // create a new branch [new_branch_name] based on the existing branch
+
 git branch // show branches
 
 git branch -d [branch_name] // delete branch
