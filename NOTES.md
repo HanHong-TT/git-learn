@@ -16,6 +16,7 @@ git commit [-a] [-m '[message]'] // -a to skip the add part.
 
 git push [-u] [repo] [branch] origin master
 
+git push [remote] [local branch name]:[remote branch to push into] // push and intend to merge into certain branch
 git status
 
 git diff // shows difference of **modified but not yet staged** changes
