@@ -121,4 +121,8 @@ git branch // show branches
 
 git branch -d [branch_name] // delete branch
 
-git merge [to_merge_branch] // merget to_merge_branch to the current HEAD branch
+# Merge
+
+git merge [--no-ff] [to_merge_branch] // merget to_merge_branch to the current HEAD branch. --no-ff is an option for no fast forward
+
+git push -u origin [merged_branch] // please push the merged branch to github after the merge function. -u option is for setting up tracking information.
